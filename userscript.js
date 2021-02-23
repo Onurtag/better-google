@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Better Google Drwonky
 // @namespace    google
-// @version      0.1.15.1
+// @version      0.1.15.2
 // @description  Don't be evil::revert google search results to older style
 // @author       aligo, adambh, tejaslodaya, drwonky
 // @license      MIT
@@ -59,7 +59,8 @@
                 urlEl.style.width = maxWidth.toString() + 'px';
             }
 
-            betterEl.appendChild(aboutResult[0]);
+            //disable broken line for now
+            //betterEl.appendChild(aboutResult[0]);
 
             tbwUpd.forEach(function(el) { el.remove() });
             linkEl.querySelector('br:first-child').remove();
